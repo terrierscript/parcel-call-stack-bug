@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "buffer": "^5.1.0",
+    "sass": "^1.9.0"
+  },
+  "scripts": {
+    "build-parcel": "cd node_modules/parcel-bundler; yarn; yarn build",
+    "build-app": "parcel build index.js",
+    "build": "yarn link parcel-bundler; yarn build-app"
+  }
+}
